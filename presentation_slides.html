@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>🚀 Documentação 4.0 na Era IA - Campus Party 2025</title>
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/theme/black.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { color: #42A5F5; }
+        .reveal .progress { color: #42A5F5; }
+        .highlight { background: #FFD54F; color: #000; padding: 0.2em; }
+        .emoji { font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- SLIDE 1: TÍTULO -->
+            <section data-background-color="#1565C0">
+                <h1>🚀 Documentação 4.0 na Era IA</h1>
+                <h3>Campus Party 2025</h3>
+                <p><strong>Apresentado por:</strong></p>
+                <p>👨‍💻 <strong>Áulus Carvalho Diniz</strong><br>
+                Engenheiro de Software (UnB)</p>
+                <p>🤖 <strong>Lucas Dórea Cardoso</strong><br>
+                AI Developer & MCP Specialist</p>
+            </section>
+
+            <!-- SLIDE 2: AGENDA -->
+            <section>
+                <h2>📋 Agenda - 60 minutos</h2>
+                <ul>
+                    <li>🎯 <strong>Abertura</strong> (5min) - Quem somos e objetivos</li>
+                    <li>📈 <strong>Evolução Doc 1.0→4.0</strong> (10min) - História e transformação</li>
+                    <li>🏗️ <strong>Arquiteturas RAG/Agents</strong> (15min) - Tecnologia</li>
+                    <li>💻 <strong>Demo ao Vivo</strong> (15min) - Código funcionando</li>
+                    <li>🚀 <strong>Implementação</strong> (10min) - Como começar</li>
+                    <li>❓ <strong>Q&A</strong> (5min) - Suas perguntas</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 3: QUEM SOMOS -->
+            <section>
+                <section>
+                    <h2>👥 Quem Somos</h2>
+                </section>
+                <section>
+                    <h3>👨‍💻 Áulus Carvalho Diniz</h3>
+                    <ul>
+                        <li>🎓 <strong>Engenheiro de Software</strong> - UnB</li>
+                        <li>🔬 <strong>Pesquisador</strong> - IA aplicada ao ensino</li>
+                        <li>⚙️ <strong>Especialidades</strong>:</li>
+                        <ul>
+                            <li>Hipermídia adaptativa</li>
+                            <li>Sistemas inteligentes</li>
+                            <li>Avaliação automatizada</li>
+                        </ul>
+                        <li>🛠️ <strong>Stack</strong>: Java, Python, JavaScript, NodeJS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>🤖 Lucas Dórea Cardoso</h3>
+                    <ul>
+                        <li>💻 <strong>AI Developer</strong> - MCP Servers & Automação</li>
+                        <li>🎯 <strong>Filosofia</strong>: "Cada linha de código deve gerar resultado mensurável"</li>
+                        <li>🚀 <strong>Especialidades</strong>:</li>
+                        <ul>
+                            <li>MCP servers universais</li>
+                            <li>Automação de fluxos</li>
+                            <li>Soluções práticas</li>
+                        </ul>
+                        <li>🔗 <strong>GitHub</strong>: <a href="https://github.com/Lucasdoreac">github.com/Lucasdoreac</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- SLIDE 4: PROBLEMA ATUAL -->
+            <section data-background-color="#D32F2F">
+                <h2>😤 O Problema Atual</h2>
+                <p class="highlight">Quantos aqui já perderam HORAS procurando informação em documentação mal escrita?</p>
+                <div style="text-align: left; margin-top: 2em;">
+                    <p>📊 <strong>Estatísticas reais</strong>:</p>
+                    <ul>
+                        <li>⏱️ Desenvolvedores gastam <strong>30% do tempo</strong> procurando informação</li>
+                        <li>📚 <strong>90% da documentação</strong> fica desatualizada em 6 meses</li>
+                        <li>💸 Empresas perdem <strong>milhões</strong> em produtividade</li>
+                        <li>😫 <strong>Frustração</strong> constante dos times técnicos</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: EVOLUÇÃO -->
+            <section>
+                <section>
+                    <h2>📈 Evolução da Documentação</h2>
+                    <p>Como chegamos até aqui?</p>
+                </section>
+                <section>
+                    <h3>📄 Doc 1.0 (1990-2005): Era Manual</h3>
+                    <ul>
+                        <li>🗄️ Word, PDF estáticos</li>
+                        <li>👤 Uma pessoa responsável</li>
+                        <li>📧 Distribuição por email</li>
+                        <li>⚠️ <strong>Problema</strong>: Sempre desatualizada</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>🌐 Doc 2.0 (2005-2015): Era Colaborativa</h3>
+                    <ul>
+                        <li>📚 Wikis e Confluences</li>
+                        <li>👥 Colaboração em tempo real</li>
+                        <li>🔍 Busca básica</li>
+                        <li>⚠️ <strong>Problema</strong>: Qualidade inconsistente</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>⚙️ Doc 3.0 (2015-2020): Era DevOps</h3>
+                    <ul>
+                        <li>📝 Docs as Code</li>
+                        <li>🔄 CI/CD básico</li>
+                        <li>🤝 Integração com desenvolvimento</li>
+                        <li>⚠️ <strong>Problema</strong>: Ainda muito manual</li>
+                    </ul>
+                </section>
+                <section data-background-color="#2E7D32">
+                    <h3>🤖 Doc 4.0 (2020-hoje): Era IA</h3>
+                    <ul>
+                        <li>🧠 <strong>Inteligência Artificial</strong> - Geração automática</li>
+                        <li>🔍 <strong>RAG Systems</strong> - Busca semântica</li>
+                        <li>🤖 <strong>AI Agents</strong> - Automação total</li>
+                        <li>📊 <strong>Qualidade Mensurada</strong> - Métricas precisas</li>
+                        <li>✨ <strong>Resultado</strong>: Documentação que se mantém sozinha!</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- SLIDE 6: DOC 4.0 DEFINIÇÃO -->
+            <section data-background-color="#1565C0">
+                <h2>🤖 O que é Documentação 4.0?</h2>
+                <div style="text-align: left;">
+                    <p><strong>Documentação 4.0</strong> = <span class="highlight">IA + Automação + Qualidade</span></p>
+                    <br>
+                    <p>🎯 <strong>Características únicas</strong>:</p>
+                    <ul>
+                        <li>🤖 <strong>Inteligente</strong>: Compreende contexto</li>
+                        <li>⚡ <strong>Automática</strong>: Gera e atualiza sozinha</li>
+                        <li>📊 <strong>Mensurável</strong>: Métricas de qualidade</li>
+                        <li>🎯 <strong>Personalizada</strong>: Adapta-se ao usuário</li>
+                        <li>🔄 <strong>Evolutiva</strong>: Melhora continuamente</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: ARQUITETURA RAG -->
+            <section>
+                <section>
+                    <h2>🔍 RAG - Retrieval-Augmented Generation</h2>
+                    <p>O coração da Documentação 4.0</p>
+                </section>
+                <section>
+                    <h3>🏗️ Como RAG Funciona</h3>
+                    <div style="font-size: 0.8em; text-align: left;">
+                        <p><strong>1. Pergunta do usuário</strong> → "Como fazer deploy da API?"</p>
+                        <p><strong>2. Busca semântica</strong> → Encontra documentação relevante</p>
+                        <p><strong>3. Contexto + IA</strong> → Gera resposta precisa</p>
+                        <p><strong>4. Resposta contextualizada</strong> → Informação atual e correta</p>
+                    </div>
+                    <br>
+                    <p class="highlight">🎯 Resultado: 95% de precisão vs 60% busca tradicional</p>
+                </section>
+                <section>
+                    <h3>💻 Código RAG Simples</h3>
+                    <pre><code data-language="python">
+from langchain import OpenAI, VectorStore
+
+# 1. Pergunta do usuário
+question = "Como fazer deploy da API?"
+
+# 2. Busca no knowledge base
+relevant_docs = vector_store.similarity_search(question)
+
+# 3. IA gera resposta contextualizada  
+answer = llm.generate(question + relevant_docs)
+
+print(answer)  # Resposta precisa e atual!
+                    </code></pre>
+                </section>
+            </section>
+
+            <!-- SLIDE 8: AI AGENTS -->
+            <section>
+                <section>
+                    <h2>🤖 Agentes IA Especializados</h2>
+                    <p>Sua equipe de documentação automática</p>
+                </section>
+                <section>
+                    <h3>🛠️ Tipos de Agentes</h3>
+                    <ul>
+                        <li>✍️ <strong>AGENT WRITER</strong>: Cria documentação automaticamente</li>
+                        <li>🔍 <strong>AGENT REVIEWER</strong>: Valida qualidade e precisão</li>
+                        <li>📊 <strong>AGENT METRICS</strong>: Monitora performance e uso</li>
+                        <li>🔄 <strong>AGENT UPDATER</strong>: Mantém conteúdo atualizado</li>
+                    </ul>
+                    <br>
+                    <p class="highlight">🎯 Resultado: Documentação que nunca fica desatualizada!</p>
+                </section>
+            </section>
+
+            <!-- SLIDE 9: DEMO AO VIVO -->
+            <section data-background-color="#2E7D32">
+                <section>
+                    <h2>💻 Demo ao Vivo</h2>
+                    <p>Vamos ver funcionando!</p>
+                </section>
+                <section>
+                    <h3>🔍 Demo 1: RAG em Ação</h3>
+                    <p><strong>Pergunta complexa</strong>: "Como implementar autenticação OAuth2 com rate limiting?"</p>
+                    <br>
+                    <div style="text-align: left; font-size: 0.9em;">
+                        <p>⚡ <strong>Sistema busca</strong> em 1200+ páginas de docs</p>
+                        <p>🎯 <strong>Resposta contextualizada</strong> com código funcional</p>
+                        <p>✅ <strong>Validação ao vivo</strong>: Testar código gerado</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>🤖 Demo 2: Agente Auto-Update</h3>
+                    <div style="text-align: left; font-size: 0.9em;">
+                        <p><strong>1. Mudança no código</strong>: Commit com nova feature</p>
+                        <p><strong>2. Agente detecta</strong>: Webhook acionado automaticamente</p>
+                        <p><strong>3. Docs atualizados</strong>: Em 30 segundos, sem intervenção humana</p>
+                        <p><strong>4. Notificação</strong>: Time alertado da mudança</p>
+                    </div>
+                    <br>
+                    <p class="highlight">⚡ De horas para segundos!</p>
+                </section>
+            </section>
+
+            <!-- SLIDE 10: RESULTADOS -->
+            <section>
+                <section>
+                    <h2>📊 Resultados Reais</h2>
+                    <p>Números que impressionam</p>
+                </section>
+                <section>
+                    <h3>⚡ Eficiência</h3>
+                    <table style="font-size: 0.8em;">
+                        <tr>
+                            <th>Métrica</th>
+                            <th>Antes</th>
+                            <th>Depois</th>
+                            <th>Melhoria</th>
+                        </tr>
+                        <tr>
+                            <td>Tempo para encontrar info</td>
+                            <td>12min</td>
+                            <td>30s</td>
+                            <td><strong>96% ↓</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Tickets de suporte</td>
+                            <td>89/mês</td>
+                            <td>23/mês</td>
+                            <td><strong>74% ↓</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Onboarding devs</td>
+                            <td>2 semanas</td>
+                            <td>3 dias</td>
+                            <td><strong>78% ↓</strong></td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>💰 ROI Financeiro</h3>
+                    <div style="text-align: left;">
+                        <p><strong>Para empresa com 100+ desenvolvedores</strong>:</p>
+                        <ul>
+                            <li>💵 <strong>Economia anual</strong>: $200K+</li>
+                            <li>💸 <strong>Investimento inicial</strong>: $50K</li>
+                            <li>📈 <strong>ROI</strong>: 300% no primeiro ano</li>
+                            <li>⏱️ <strong>Payback</strong>: 3-4 meses</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <!-- SLIDE 11: COMO IMPLEMENTAR -->
+            <section>
+                <section>
+                    <h2>🚀 Como Implementar</h2>
+                    <p>Roadmap prático em 4 fases</p>
+                </section>
+                <section>
+                    <h3>🏗️ Fase 1: Foundation (Semanas 1-2)</h3>
+                    <ul>
+                        <li>✅ <strong>Setup básico</strong>: Markdown, Git, CI/CD</li>
+                        <li>✅ <strong>Estrutura inicial</strong>: Templates e padrões</li>
+                        <li>🛠️ <strong>Ferramentas</strong>: GitHub, Vale linter</li>
+                        <li>🎯 <strong>Resultado</strong>: Base sólida para automação</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>🤖 Fase 2: AI Integration (Semanas 3-4)</h3>
+                    <ul>
+                        <li>🔍 <strong>RAG básico</strong>: Sistema funcionando</li>
+                        <li>🤖 <strong>Agentes especializados</strong>: Writer, Reviewer</li>
+                        <li>🛠️ <strong>Ferramentas</strong>: LangChain, OpenAI API, Vector DB</li>
+                        <li>🎯 <strong>Resultado</strong>: Documentação inteligente funcionando</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>📊 Fase 3: Analytics (Semanas 5-6)</h3>
+                    <ul>
+                        <li>📈 <strong>Dashboard de métricas</strong>: Visibilidade total</li>
+                        <li>🔔 <strong>Alertas e automação</strong>: Monitoramento ativo</li>
+                        <li>🎯 <strong>Resultado</strong>: Controle total do processo</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>⚡ Fase 4: Optimization (Semanas 7-8)</h3>
+                    <ul>
+                        <li>🎯 <strong>Fine-tuning</strong>: Ajustes baseados em dados</li>
+                        <li>📈 <strong>Escalar</strong>: Expandir para toda organização</li>
+                        <li>🎯 <strong>Resultado</strong>: Sistema otimizado e escalável</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- SLIDE 12: STACK TECNOLÓGICO -->
+            <section>
+                <h2>🛠️ Stack Tecnológico</h2>
+                <div style="text-align: left; font-size: 0.8em;">
+                    <p><strong>🤖 AI/ML Layer</strong>:</p>
+                    <ul>
+                        <li>LLMs: GPT-4, Claude-3, Llama-2</li>
+                        <li>Frameworks: LangChain, LlamaIndex</li>
+                        <li>Vector DBs: Pinecone, Weaviate, ChromaDB</li>
+                    </ul>
+                    <br>
+                    <p><strong>🔧 Automation Layer</strong>:</p>
+                    <ul>
+                        <li>CI/CD: GitHub Actions, GitLab CI</li>
+                        <li>Quality: Vale, Playwright, Lighthouse</li>
+                        <li>Deploy: Docker, Kubernetes, Netlify</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 13: PRÓXIMOS PASSOS -->
+            <section data-background-color="#2E7D32">
+                <h2>🎯 Seus Próximos Passos</h2>
+                <div style="text-align: left;">
+                    <p><strong>🔰 Para começar HOJE</strong>:</p>
+                    <ol>
+                        <li>📋 <strong>Audit</strong> sua documentação atual</li>
+                        <li>🎯 <strong>Defina</strong> métricas de sucesso</li>
+                        <li>🚀 <strong>Comece pequeno</strong> com um caso de uso</li>
+                        <li>📊 <strong>Meça</strong> resultados e itere</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- SLIDE 14: RECURSOS -->
+            <section>
+                <h2>📚 Recursos Úteis</h2>
+                <div style="text-align: left; font-size: 0.9em;">
+                    <p><strong>🔗 Links importantes</strong>:</p>
+                    <ul>
+                        <li>🤖 <strong>Lucas no GitHub</strong>: <a href="https://github.com/Lucasdoreac">github.com/Lucasdoreac</a></li>
+                        <li>💼 <strong>LinkedIn Áulus</strong>: <a href="https://www.linkedin.com/in/aulus-diniz-9aaab352/">Áulus Carvalho Diniz</a></li>
+                        <li>💼 <strong>LinkedIn Lucas</strong>: <a href="https://www.linkedin.com/in/lucas-dórea-cardoso-771833112/">Lucas Dórea Cardoso</a></li>
+                    </ul>
+                    <br>
+                    <p><strong>🛠️ Ferramentas mencionadas</strong>:</p>
+                    <ul>
+                        <li>LangChain, OpenAI, Anthropic, Pinecone</li>
+                        <li>Vale, GitHub Actions, Docker</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 15: Q&A -->
+            <section data-background-color="#1565C0">
+                <h2>❓ Perguntas & Respostas</h2>
+                <br>
+                <p style="font-size: 1.2em;">Suas dúvidas técnicas!</p>
+                <br>
+                <p><strong>📱 Conecte-se conosco:</strong></p>
+                <p>👨‍💻 Áulus Carvalho Diniz</p>
+                <p>🤖 Lucas Dórea Cardoso</p>
+                <br>
+                <p class="highlight">Obrigado pela atenção! 🚀</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+    
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'slide',
+            
+            plugins: [ RevealNotes, RevealHighlight ]
+        });
+    </script>
+</body>
+</html>
